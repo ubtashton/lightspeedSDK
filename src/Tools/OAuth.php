@@ -3,7 +3,7 @@
 namespace UbtAshton\Lightspeed\Tools;
 
 use UbtAshton\Lightspeed\Exceptions\GeneralException;
-use UbtAshton\Lightspeed\Resources\Token
+use UbtAshton\Lightspeed\Resources\Token;
 trait AuthorisesWithOAuth
 {
     /** @var string */
