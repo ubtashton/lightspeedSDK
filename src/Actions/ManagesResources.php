@@ -5,7 +5,7 @@ namespace UbtAshton\Lightspeed\Actions;
 use UbtAshton\Lightspeed\Resources\Version;
 use UbtAshton\Lightspeed\Lightspeed;
 
-class ManagesResources {
+trait ManagesResources {
 
 
     private $lightspeed;
