@@ -21,6 +21,8 @@ class Lightspeed
         ]);
 
         $this->token = new Token([]);
+
+        //likely need an actionmanager here
     }
 
     //loading in a token
