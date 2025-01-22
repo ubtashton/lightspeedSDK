@@ -36,6 +36,9 @@ class Product {
     //active: bool|null
     public $active;
 
+    //ecwid_enabled_webstore: bool|null
+    public $ecwid_enabled_webstore;
+
     //has_inventory: bool|null
     public $has_inventory;
 
@@ -117,7 +120,7 @@ class Product {
     //product_codes: mixed|null
     public $product_codes;
     
-    //product_suppliers: mixed|null
+    //product_suppliers: UbtAshton\Lightspeed\Resources\ProductSupplier[]|null
     public $product_suppliers;
 
     //packaging: mixed|null
