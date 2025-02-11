@@ -1,5 +1,5 @@
 {
-    "name": "ubtashton/LightspeedSDK",
+    "name": "ubtashton/Lightspeedsdk",
     "description": "A PHP SDK for the Lightspeed Retail series X API",
     "type": "library",
     "autoload": {
