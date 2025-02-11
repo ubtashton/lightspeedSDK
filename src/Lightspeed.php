@@ -83,7 +83,7 @@ class lightspeed
 
 
     //get auth token (used to get a token after returning from the oauth process)
-    function getAuthToken($code)
+    function getAuthToken($code, $redirect)
     {
         $client = new Client();
         $response = $client->request('POST', 'https://' . $this->store . '.retail.lightspeed.app/api/1.0/token', [
@@ -91,7 +91,8 @@ class lightspeed
                 'client_id' => $this->clientid,
                 'client_secret' => $this->clientsecret,
                 'code' => $code,
-                'grant_type' => 'authorization_code'
+                'grant_type' => 'authorization_code',
+                'redirect_uri' => $redirect
             ]
         ]);
         return json_decode($response->getBody());
