@@ -1,10 +1,10 @@
 {
-    "name": "ubtashton/lightspeed-sdk",
+    "name": "ubtashton/LightspeedSDK",
     "description": "A PHP SDK for the Lightspeed Retail series X API",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "ubtashton\\LightspeedSdk\\": "src/"
+            "ubtashton\\LightspeedSDK\\": "src/"
         }
     },
     "authors": [
