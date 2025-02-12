@@ -2,6 +2,7 @@
     "name": "ubtashton/lightspeedsdk",
     "description": "A PHP SDK for the Lightspeed Retail series X API",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "ubtashton\\LightspeedSDK\\": "src/"
