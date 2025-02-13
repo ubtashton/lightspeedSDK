@@ -46,7 +46,7 @@ class lightspeed
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->token]
             ]);
-        return json_decode($response->getBody())->data;
+        return json_decode($response->getBody());
     }
 
     //queries required for store setup etc
@@ -54,13 +54,13 @@ class lightspeed
     //get Retailer function, to get information about the retailer
     function getRetailer()
     {
-        return $this->get('api/2.0/retailer');
+        return $this->get('api/2.0/retailer')->data;
     }
 
     //get versions - useful to get the current version of certain elements on the api
     function getVersions()
     {
-        return $this->get('api/2.0/versions');
+        return $this->get('api/2.0/versions')->data;
     }
 
     //get outlets
