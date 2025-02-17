@@ -205,7 +205,7 @@ class lightspeed
         if ($after > 0) {
             $query .= '&after=' . $after;
         }
-        return $this->get('api/2.0/price_books' . $query);
+        return $this->get('api/3.0/price_books' . $query);
     }
 
     //get pricebookproducts - has a page_size, after parameter
