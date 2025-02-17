@@ -208,6 +208,24 @@ class lightspeed
         return $this->get('api/3.0/price_books' . $query);
     }
 
+    //get a single pricebook
+    function getPricebook($pricebook_id)
+    {
+        return $this->get('api/2.0/price_books/' . $pricebook_id);
+    }
+
+
+    //get products by pricebook
+    function getPricebookProductsByPricebook($pricebook_id, $page_size = 1000, $after = 0)
+    {
+        $query = '';
+        $query .= '?page_size=' . $page_size;
+        if ($after > 0) {
+            $query .= '&after=' . $after;
+        }
+        return $this->get('api/2.0/price_books/' . $pricebook_id . '/products' . $query);
+    }
+
     //get pricebookproducts - has a page_size, after parameter
     function getPricebookProducts($page_size = 1000, $after = 0)
     {
@@ -218,6 +236,7 @@ class lightspeed
         }
         return $this->get('api/2.0/price_book_products' . $query);
     }
+
 
 
 
