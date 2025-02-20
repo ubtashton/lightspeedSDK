@@ -238,6 +238,16 @@ class lightspeed
     }
 
 
+    function getInventoryRecords($page_size, $after){
+        $query = '';
+        $query .= '?page_size=' . $page_size;
+        if ($after > 0) {
+            $query .= '&after=' . $after;
+        }
+        return $this->get('api/2.0/inventory' . $query);
+    }
+
+
 
 
         
