@@ -64,9 +64,15 @@ class lightspeed
     }
 
     //get outlets
-    function getOutlets()
+    function getOutlets($page_size = 1000, $after = 0)
     {
-        return $this->get('api/2.0/outlets');
+        $query = 'api/2.0/outlets';
+        $query .= '?page_size=' . $page_size;
+        if ($after > 0) {
+            $query .= '&after=' . $after;
+        }
+
+        return $this->get($query);
     }
 
     //get registers
